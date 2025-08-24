@@ -1,0 +1,17 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "nixpacksPlan": {
+      "phases": {
+        "install": {
+          "commands": [
+            "pip install -r requirements.txt"
+          ]
+        }
+      }
+    }
+  },
+  "deploy": {
+    "startCommand": "python3 main.py"
+  }
+}
